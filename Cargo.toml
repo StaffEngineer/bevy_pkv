@@ -31,7 +31,7 @@ rocksdb = { version = "0.20", optional = true }
 sled = { version = "0.34", optional = true }
 rmp-serde = "1.1"
 directories = "5.0"
-redb = { git = "https://github.com/cberner/redb", ref = "195b519", optional = true }
+redb = { git = "https://github.com/cberner/redb", ref = "c916b09", optional = true }
 
 [dev-dependencies]
 bevy = { git = "https://github.com/bevyengine/bevy", rev = "8ec8149", default-features = false }
