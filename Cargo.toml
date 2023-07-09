@@ -12,7 +12,7 @@ repository = "https://github.com/johanhelsing/bevy_pkv"
 [dependencies]
 thiserror = "1.0"
 serde = "1.0"
-bevy_ecs = { git = "https://github.com/bevyengine/bevy", rev = "1e73312",  optional = true } # we need for deriving Resource in PkvStore
+bevy_ecs = { version = "0.11",  optional = true } # we need for deriving Resource in PkvStore
 
 [features]
 default = ["bevy", "redb"]
@@ -31,10 +31,10 @@ rocksdb = { version = "0.20", optional = true }
 sled = { version = "0.34", optional = true }
 rmp-serde = "1.1"
 directories = "5.0"
-redb = { git = "https://github.com/cberner/redb", ref = "c916b09", optional = true }
+redb = { version = "1.0.4", optional = true }
 
 [dev-dependencies]
-bevy = { git = "https://github.com/bevyengine/bevy", rev = "1e73312", default-features = false }
+bevy = { version = "0.11", default-features = false }
 strum_macros = "*"
 
 [build-dependencies]
